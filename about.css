@@ -459,6 +459,10 @@ nav li.slide {
 
 @media (min-width: 450px) {
 
+  .hero{
+    top: 30%;
+    left: 60%;
+  }
   .hero h1{
     font-size: 2.5em;
     font-family: 'Open Sans', sans-serif;
@@ -466,12 +470,12 @@ nav li.slide {
     text-transform: uppercase;
     padding: 0;
     margin-bottom: 10%;
-    min-width: 152%;
+    min-width: 122%;
   }
 
   .hero p{
     font-size: 1.5em;
-    min-width: 152%;
+    min-width: 122%;
   }
 
   nav li {
