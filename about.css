@@ -387,7 +387,7 @@ nav li.slide {
 }
 
 /* Desktop */
-@media (max-width: 1500px) {
+/* @media (max-width: 1500px) {
   .hero h1{
     font-size: 2em;
     font-family: 'Open Sans', sans-serif;
@@ -401,11 +401,11 @@ nav li.slide {
     font-size: 1em;
     min-width: 112%;
   }
-}
+} */
 
-@media (max-width: 700px) {
+/* @media (max-width: 700px) {
   .hero h1{
-    font-size: .75em;
+    font-size: 1em;
     font-family: 'Open Sans', sans-serif;
     font-weight: 600;
     text-transform: uppercase;
@@ -417,28 +417,8 @@ nav li.slide {
     font-size: .5em;
     min-width: 112%;
   }
-}
+} */
 
-@media (max-width: 600px) {
-  .hero h1{
-    font-size: .5em;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 600;
-    text-transform: uppercase;
-    padding: 0;
-    margin-bottom: 10%;
-  }
-
-  .hero p{
-    font-size: .5em;
-    min-width: 112%;
-  }
-}
-
-
-@media (max-width: 500px) {
-
-}
 
 /* @media (min-width: 450px) {
 
@@ -460,8 +440,8 @@ nav li.slide {
 @media (min-width: 450px) {
 
   .hero{
-    top: 30%;
-    left: 60%;
+    /* top: 30%;
+    left: 60%; */
   }
   .hero h1{
     font-size: 2.5em;
