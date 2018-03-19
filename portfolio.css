@@ -173,6 +173,7 @@ nav li.slide {
  padding-top: 50px;
  margin: 0 auto;
  width: 100%;
+ height: 100%;
 }
 
 
@@ -434,7 +435,7 @@ section .title span a::after {
  }
 
  .grid .col-one-half {
-   width: 47.5%;
+   width: 66.5%;
  }
 
  .grid .col-one-third {
