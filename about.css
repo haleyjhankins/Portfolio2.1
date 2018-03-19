@@ -440,8 +440,8 @@ nav li.slide {
 @media (min-width: 450px) {
 
   .hero{
-    /* top: 30%;
-    left: 60%; */
+    top: 40%;
+    /* left: 60%; */
   }
   .hero h1{
     font-size: 2.5em;
