@@ -331,10 +331,10 @@ section .title span a::after {
       letter-spacing: 2px;
     }
 
-    .logo{
+    /* .logo{
       margin-left: 5%;
       margin-top: 10%;
-    }
+    } */
 
     .title{
       /* margin: 0 auto;
@@ -384,5 +384,9 @@ section .title span a::after {
     margin-top: 2%;
     background-size: 80px;
     height: 80px;
+  }
+  nav li {
+    font-size: 20px;
+    letter-spacing: 2px;
   }
 }
