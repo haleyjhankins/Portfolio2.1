@@ -250,6 +250,13 @@ section {
     font-size: 26px;
     margin-top: 12px;
 }
+
+.blog-title{
+  font-size: 2em;
+  color: white;
+  margin: 0 auto;
+  text-align: center;
+}
 .blog-post-title a {
     color: #1c1c1c;
 }
