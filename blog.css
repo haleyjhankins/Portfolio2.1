@@ -30,6 +30,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
   line-height: 1;
+
 }
 ol, ul {
   list-style: none;
@@ -56,6 +57,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Open Sans', sans-serif;
+
 }
 ::selection {
   background-color: #f7ca18;
@@ -170,15 +172,225 @@ nav li.slide {
   transform: translateY(0);
 }
 
- .logo {
-    background-image: url("logo.png");
-    background-repeat: no-repeat;
-    background-size: 50px;
-    color: transparent;
-    float: left;
-    height: 50px;
+
+
+section {
+  background-color: #1b1b1b;
+  height: 100%;
+  display: flex;
+}
+
+
+
+/*----- Blog -----*/
+
+.post-time-section {
+  float: left;
+  text-align: center;
+  margin-right: 15px;
+  margin-top: 15px;
+  margin-bottom: 0;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -o-border-radius: 3px;
+  overflow: hidden;
+}
+
+.post-time-section .post-date {
+  padding: 10px 0;
+  width: 55px;
+  background-color: #444;
+  color: #fff;
+}
+
+.post-time-section .post-date .day {
+  font-size: 20px;
+  font-weight: 700;
+  display: block;
+  letter-spacing: 1px;
+}
+
+.post-time-section .post-month .month {
+  display: block;
+  text-transform: uppercase;
+  line-height: 14px;
+  font-size: 11px;
+  letter-spacing: 1px;
+  height: 25px;
+  line-height: 25px;
+  color: #fff;
+  background-color:#333;
+}
+.blog-column-left{
+   margin-left: 70px;
+   margin-top: 12px;
+}
+#blog {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    margin-left: 10%;
+    margin-right: 10%;
+
+}
+
+#blog p{
+  color: white;
+}
+
+.blog-post {
+    position: relative;
+    margin-bottom: 80px;
+}
+.blog-post p {
+    line-height: 1.8;
+}
+.blog-post-title {
+    letter-spacing: 1px;
+    font-size: 26px;
+    margin-top: 12px;
+}
+.blog-post-title a {
+    color: #1c1c1c;
+}
+.blog-post-info {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 15px;
+}
+.blog-post-info li {
+    display: inline-block;
+    font-size: 13px;
+    margin-right: 15px;
+}
+.blog-post-info li a {
+    color: #888;
+}
+.blog-post-info li a:hover {
+    color: #1c1c1c;
+}
+.blog-post-info li i {
+    font-size: 12px;
+    margin-right: 3px;
+}
+.blog-post-date {
+    position: absolute;
+    right: 5px;
+    top: -7px;
+    text-align: center;
+}
+.blog-post-date h2,
+.blog-post-date h5 {
     margin: 0;
-  }
+}
+.blog-post .video-container {
+    margin-bottom: 0;
+}
+.blog-post .img-responsive {
+    width: 100%;
+}
+.blog-post .owl-pagination {
+    display: block;
+    width: 100%;
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    text-align: center;
+    z-index: 100 !important;
+}
+.blog-post .owl-theme .owl-controls .owl-page span {
+    cursor: pointer;
+    display: inline-block;
+    background-color: #888;
+    border-color: #888;
+    border: 2px solid transparent;
+    height: 12px;
+    width: 12px;
+    margin: 0 3px;
+    opacity: 1;
+    -moz-background-clip: content;
+    -webkit-background-clip: content;
+    background-clip: content-box;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.blog-post .owl-theme .owl-controls .owl-page.active span {
+    border-color: #888;
+    background-color: transparent;
+}
+.blog-post .owl-controls.clickable {
+    margin-top: 0;
+    text-align: center;
+}
+.blog-post .btn {
+    margin-top: 10px;
+    margin-left: 0;
+}
+.post-title a {
+    color: #3a3a3a;
+}
+.post-img {
+    margin-bottom:10px;
+}
+.project-img {
+    margin-bottom:60px;
+}
+.blog-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.blog-list li {
+    color: #888;
+    font-size: 13px;
+    padding: 10px;
+    border-bottom: 1px solid rgba(0,0,0,0.06);
+}
+.blog-list li a {
+    color: #3a3a3a;
+}
+.blog-list li a:hover {
+    color: #fff;
+}
+.blog-list li:hover a {
+    color: #fff;
+}
+.blog-widget-container {
+    margin-bottom: 60px;
+}
+@media (min-width:992px) {
+    .blog-sidebar {
+        padding-left: 40px;
+        padding-top: 10px;
+    }
+}
+.blog-widget-container .form-control {
+    font-family: 'Open Sans',sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: none;
+    box-shadow: none;
+    background: #f3f3f3;
+    border: 1px solid #ccc;
+}
+.blog-clean .post-title {
+    font-size: 40px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    letter-spacing: -2px;
+}
+.blog-clean .post-subtitle {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+.blog-post .lead {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
 
 @-moz-keyframes pop {
   0% {
@@ -278,112 +490,6 @@ nav li.slide {
 }
 
 
-@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
-
-body { background:rgb(27,27,27); }
-form { max-width:420px; margin:50px auto; }
-
-.feedback-input {
-  color:white;
-  font-family: Helvetica, Arial, sans-serif;
-  font-weight:500;
-  font-size: 18px;
-  border-radius: 5px;
-  line-height: 22px;
-  background-color: transparent;
-  border:2px solid #E1CD81;
-  transition: all 0.3s;
-  padding: 13px;
-  margin-bottom: 15px;
-  width:100%;
-  box-sizing: border-box;
-  outline:0;
-}
-
-.feedback-input:focus { border:2px solid #CC4949; }
-
-.form-title {
-  color:white;
-  font-family: Helvetica, Arial, sans-serif;
-  font-weight:500;
-  font-size: 18px;
-  border-radius: 5px;
-  line-height: 22px;
-}
-
-textarea {
-  height: 150px;
-  line-height: 150%;
-  resize:vertical;
-}
-
-[type="submit"] {
-  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
-  width: 100%;
-  background:#E1CD81;
-  border-radius:5px;
-  border:0;
-  cursor:pointer;
-  color:white;
-  font-size:24px;
-  padding-top:10px;
-  padding-bottom:10px;
-  transition: all 0.3s;
-  margin-top:-4px;
-  font-weight:700;
-}
-[type="submit"]:hover { background:#CCB45E; }
-
-
-
-/* @import url('fontawesome-all.css'); */
-a, a:hover {
-  text-decoration: none;
-}
-
-.socialbtns, .socialbtns ul, .socialbtns li{
-  margin: 0;
-  padding: 5px;
-}
-
-.socialbtns li {
-    list-style: none outside none;
-    display: inline-block;
-}
-
-.socialbtns .fa {
-  width: 40px;
-    height: 28px;
-  color: #FFF;
-  background-color: #000;
-  padding-top: 12px;
-  border-radius: 20px;
-  -moz-border-radius: 20px;
-  -webkit-border-radius: 20px;
-  -o-border-radius: 20px;
-  transition: all ease 0.5s;
-  -moz-transition: all ease 0.5s;
-  -webkit-transition: all ease 0.5s;
-  -o-transition: all ease 0.5s;
-}
-
-.socialbtns .fa:hover {
-  transform: scale(1.2,1.2);
-  -moz-transform: scale(1.2,1.2);
-  -webkit-transform: scale(1.2,1.2);
-  -o-transform: scale(1.2,1.2);
-  transition: all ease 0.5s;
-  -moz-transition: all ease 0.5s;
-  -webkit-transition: all ease 0.5s;
-  -o-transition: all ease 0.5s;
-}
-
-
-
-
-
-
-
 
 @media (max-width: 400px) {
     nav li {
@@ -391,10 +497,10 @@ a, a:hover {
       letter-spacing: 2px;
     }
 
-    .logo{
+    /* .logo{
       margin-left: 5%;
       margin-top: 10%;
-    }
+    } */
 
     .title{
       /* margin: 0 auto;
@@ -402,31 +508,59 @@ a, a:hover {
     }
 }
 
+/* Desktop */
+@media (max-width: 1500px) {
+  .logo{
+    margin-left: 2%;
+    margin-top: 1%;
+    background-size: 70px;
+    height: 70px;
+  }
 
+  section{
+    height: 100%;
+  }
+}
+
+@media (max-width: 700px) {
+  .logo{
+    margin-left: 5%;
+    margin-top: 5%;
+    background-size: 50px;
+    height: 50px;
+  }
+}
+
+@media (max-width: 600px) {
+  .logo{
+    margin-left: 3%;
+    margin-top: 3%;
+  }
+}
+
+
+@media (max-width: 500px) {
+  .logo{
+    margin-left: 5%;
+    margin-top: 5%;
+    background-size: 50px;
+    height: 50px;
+  }
+}
 
 @media (min-width: 450px) {
-
-  .hero{
-    top: 40%;
-    /* left: 60%; */
+  .logo{
+    margin-left: 2%;
+    margin-top: 2%;
+    background-size: 80px;
+    height: 80px;
   }
-  .hero h1{
-    font-size: 2.5em;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 600;
-    text-transform: uppercase;
-    padding: 0;
-    margin-bottom: 10%;
-    min-width: 122%;
-  }
-
-  .hero p{
-    font-size: 1.5em;
-    min-width: 122%;
-  }
-
   nav li {
     font-size: 20px;
     letter-spacing: 2px;
+  }
+
+  section{
+    height: 100%;
   }
 }
