@@ -56,6 +56,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Open Sans', sans-serif;
+  height: 100%;
 }
 ::selection {
   background-color: #f7ca18;
@@ -170,15 +171,109 @@ nav li.slide {
   transform: translateY(0);
 }
 
- .logo {
-    background-image: url("logo.png");
-    background-repeat: no-repeat;
-    background-size: 50px;
-    color: transparent;
-    float: left;
-    height: 50px;
-    margin: 0;
+@import url(https://fonts.googleapis.com/css?family=Ubuntu);
+
+body {
+  font-family: 'Open Sans';
+  background: #000000;
+  color: white;
+  text-align: center;
+  margin-bottom: 10%;
+}
+.skills {
+  list-style: none;
+  font-size: 20px;
+  width: 50%;
+  margin: 0 auto;
+
+}
+.skills-h1 {
+  font-size: 50px;
+  font-weight: 50px;
+  padding-top: 3%;
+  padding-bottom: 2%;
+}
+
+.skills .skill {
+  display: block;
+  position: relative;
+  height: 60px;
+  margin: 10px auto;
+  width: 90%;
+}
+
+.skills .skill:before, .skills .skill:after {
+  content: "";
+  position: absolute;
+  border-radius: 20px;
+  margin-top: 40px;
+}
+.skills .skill:before {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 20px;
+  background: #eeeeee;
+}
+.skills .skill:after {
+  background-color: #E1CD81;
+  background: solid(-45deg, #2ea994, #2ea994 10px, #31b59f 10px, #31b59f 20px);
+  height: 16px;
+  top: 2px;
+  right: 95%;
+  bottom: 2px;
+  left: 2px;
+  -webkit-animation: fill 2s both;
+  -moz-animation: fill 2s both;
+  animation: fill 2s both;
+}
+.skills .skill:nth-child(1):after {
+  -webkit-animation-delay: 0.5s;
+  -moz-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+}
+.skills .skill:nth-child(2):after {
+  -webkit-animation-delay: 1s;
+  -moz-animation-delay: 1s;
+  animation-delay: 1s;
+}
+.skills .skill:nth-child(3):after {
+  -webkit-animation-delay: 1.5s;
+  -moz-animation-delay: 1.5s;
+  animation-delay: 1.5s;
+}
+.skills .skill:nth-child(4):after {
+  -webkit-animation-delay: 2s;
+  -moz-animation-delay: 2s;
+  animation-delay: 2s;
+}
+.skills .skill:nth-child(5):after {
+  -webkit-animation-delay: 2.5s;
+  -moz-animation-delay: 2.5s;
+  animation-delay: 2.5s;
+}
+.skills .skill[aria-label="HTML"]:after {
+  right: 15%;
+}
+.skills .skill[aria-label="CSS"]:after {
+  right: 20%;
+}
+.skills .skill[aria-label="Javascript"]:after {
+  right: 80%;
+}
+.skills .skill[aria-label="Adobe Creative Suite"]:after {
+  right: 30%;
+}
+.skills .skill[aria-label="Digital Marketing"]:after {
+  right: 20%;
+}
+
+@keyframes fill {
+  from {
+    right: 100%;
   }
+}
 
   /********************************/
   /*          Hero Section        */
@@ -263,12 +358,6 @@ nav li.slide {
   .fade-carousel .slides .slide-1 {
     background-image: url(me.png);
   }
-
-
-
-
-
-
 
 @-moz-keyframes pop {
   0% {
