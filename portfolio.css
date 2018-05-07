@@ -56,7 +56,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Open Sans', sans-serif;
-  background-color: #1B1B1B;
+  height: 100%;
 }
 ::selection {
   background-color: #f7ca18;
@@ -69,6 +69,7 @@ nav {
   bottom: 0;
   height: 100px;
   overflow: hidden;
+  z-index: 2;
 }
 nav ul {
   position: absolute;
@@ -170,6 +171,15 @@ nav li.slide {
   transform: translateY(0);
 }
 
+@import url(https://fonts.googleapis.com/css?family=Ubuntu);
+
+body {
+  font-family: 'Open Sans';
+  background: #000000;
+  color: white;
+  text-align: center;
+  margin-bottom: 10%;
+}
 
 #portfolio{
  padding-top: 50px;
@@ -204,7 +214,6 @@ img {
  max-width: 100%;
  height: auto;
  display: block;
- margin-bottom: 10px;
 }
 
 .wrapper {
