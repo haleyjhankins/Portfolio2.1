@@ -357,7 +357,7 @@ body {
     background-repeat: no-repeat;
   }
   .fade-carousel .slides .slide-1 {
-    background-image: url(me.png);
+    background-image: url(me-min.png);
   }
 
 @-moz-keyframes pop {

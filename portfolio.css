@@ -212,7 +212,7 @@ body {
 
 img {
  max-width: 100%;
- height: auto;
+ height: 390px;
  display: block;
 }
 
@@ -289,7 +289,7 @@ body {
 }
 
 .heroimage {
-  background-image: url(bya.png);
+  background-image: url(bya-min.png);
   background-size: cover;
   margin: 0px;
   height: 40vw;
@@ -451,8 +451,8 @@ p{
   color: gray;
 }
 
-.container {
-  width: 65%;
+.small-sketch {
+  width: 30%;
   display: block;
   margin: 50px auto;
 }
@@ -467,7 +467,7 @@ body {
 }
 
 .heroimage-hcd {
-  background-image: url(hcd.png);
+  background-image: url(hcd-min.png);
   background-size: cover;
   margin: 0px;
   height: 40vw;
@@ -630,9 +630,13 @@ p{
 }
 
 .container {
-  width: 65%;
+  width: 50%;
   display: block;
   margin: 50px auto;
+}
+
+.container p {
+  color: white;
 }
 
 
