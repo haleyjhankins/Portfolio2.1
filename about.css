@@ -458,11 +458,34 @@ body {
 
   #about .about-img {
     margin: 20px 0;
-    /* height: 250px; */
   }
 
 
   #skills h1 {
     margin-top: 10px;
+  }
+}
+
+@media (max-width: 600px) {
+  #about .about-img {
+    margin: 20px 0;
+  }
+}
+
+@media (max-width: 414px) {
+  #about .about-img {
+    margin: 20px 0;
+  }
+}
+
+@media (max-width: 375px) {
+  #about .about-img {
+    margin: 20px 0;
+  }
+}
+
+@media (max-width: 320px) {
+  #about .about-img {
+    margin: 20px 0;
   }
 }
